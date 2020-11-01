@@ -1,0 +1,12 @@
+coment: &comment
+  host: localhost
+  port: 3306
+  company: HW
+
+development:
+  database: myapp_dev
+  <<: *comment
+
+test:
+  database: myapp_test
+  <<: *comment
